@@ -1,0 +1,537 @@
+    1  git
+    2  git clone -b "17.1.0" https://github.com/ansible/awx.git
+    3  openssl rand -base64 30
+    4  pip3 install ansible -y
+    5  pip3 install ansible 
+    6  ansible-playbook 
+    7  cd awx/
+    8  ls
+    9  vi installer/inventory 
+   10  sudo mkdir /opt/awx
+   11  cd installer/
+   12  sudo ansible-playbook -i inventory install.yml 
+   13  vi installer/inventory 
+   14  vi inventory 
+   15  sudo ansible-playbook -i inventory install.yml 
+   16  python
+   17  alias python=python3
+   18  python
+   19  sudo ansible-playbook -i inventory install.yml 
+   20  pip3 install docker
+   21  sudo pip3 install docker
+   22  sudo ansible-playbook -i inventory install.yml 
+   23  pip3 install docker-compose
+   24  sudo pip3 install docker-compose
+   25  sudo pip3 install setuptools_rust
+   26  sudo pip3 install docker-compose
+   27   pip install --upgrade pip
+   28  alias pip=pip3
+   29   pip install --upgrade pip
+   30  sudo  pip install --upgrade pip
+   31  sudo pip3 install --upgrade pip
+   32  sudo pip3 install docker-compose
+   33  sudo ansible-playbook -i inventory install.yml 
+   34  sudo docker ps
+   35  sudo firewall-cmd --permanent --zone=public --add-service=http  --add-service=https
+   36  semanage port -a -t http_port_t -p tcp 8052
+   37  docker stats
+   38  history
+   39  docker stats
+   40  vi install.yml 
+   41  ls
+   42     curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+   43  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+   44  kubectl
+   45  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+   46  sudo install minikube-linux-amd64 /usr/local/bin/minikube
+   47  sudo visudo
+   48  cat /etc/group
+   49  cat /etc/group | grep root
+   50  sudo usermod -a -G wheel ansible
+   51  sudo usermod -a -G root ansible
+   52  uname -a
+   53  cat /etc/redhat-release 
+   54  yum install docker-ce -y
+   55  sudo yum install docker-ce -y
+   56  dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+   57  sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+   58  dnf list docker-ce
+   59  dnf install docker-ce --nobest -y
+   60  sudo dnf install docker-ce --nobest -y
+   61   
+   62  docker run hello-world
+   63  sudo systemctl status docker
+   64  sudo systemctl start docker
+   65  sudo systemctl status docker
+   66  docker run hello-world
+   67  sudo docker run hello-world
+   68  cat /etc/group
+   69  sudo usermod -aG docker ansible
+   70  su -l ansible
+   71  sudo su -l ansible
+   72  docker run hello-world
+   73  curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   74   dnf install curl -y
+   75  sudo  dnf install curl -y
+   76  curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   77  sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   78  sudo chmod +x /usr/local/bin/docker-compose
+   79  sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+   80  minikube
+   81  dnf install git gcc gcc-c++ nodejs gettext device-mapper-persistent-data lvm2 bzip2 python3-pip ansible
+   82  sudo dnf install git gcc gcc-c++ nodejs gettext device-mapper-persistent-data lvm2 bzip2 python3-pip ansible
+   83  python3
+   84  pip3
+   85  sudo pip3 install docker-compose
+   86  python3
+   87  dnf update
+   88  sudo dnf update
+   89  DOCKER P
+   90  docker ps
+   91  dockerps
+   92  sudo dockerps
+   93  sudo docker ps
+   94  curl localhost:8052
+   95  curl localhost:80
+   96  docker ps
+   97  ls
+   98  cat awx/installer/install.yml 
+   99  ls
+  100  cd awx
+  101  ls
+  102  cd installer/
+  103  ls
+  104  cd roles/
+  105  ls
+  106  cd local_docker/
+  107  ls
+  108  cd tasks/
+  109  ls
+  110  cat main.yml 
+  111  cat upgrade_postgres.yml 
+  112  ls
+  113  cd ..
+  114  ls
+  115  docker ps -a
+  116  docker ps -aq
+  117  vi pwgen
+  118  pwgen
+  119  docker stats
+  120  docker exec -it /bin/bash 5861c228e887
+  121  docker exec -it 5861c228e887 /bin/bash
+  122  curl -ku admin:Hackathon#2324 -H "Content-Type: application/json" -X POST -d '{"description":"Tower CLI", "application":null, "scope":"write"}' http://localhost/api/v2/users/1/personal_tokens/ | jq -r .token
+  123  top
+  124  free -m
+  125  docker ps -a
+  126  dockker ps
+  127  docker ps
+  128  DOCKER STATAS
+  129  docker stats
+  130  docker ps
+  131  sudo su
+  132  vi test.py
+  133  python3 test.py 
+  134  vi test.py
+  135  python3 test.py 
+  136  vi test.py
+  137  python3 test.py 
+  138  vi test.py
+  139  pip3 install json
+  140  vi test.py
+  141  pip3 install json
+  142  python3 test.py 
+  143  vi test.py
+  144  python3 test.py 
+  145  ls
+  146  exit
+  147   
+  148  ls
+  149  python3
+  150  cat sanket
+  151  cat sanket 
+  152  ls
+  153  cat cc 
+  154  vi take
+  155  <take
+  156  vi take
+  157  curl localhost:10445/post_endpoint
+  158  sudo firewall-cmd --zone=public --add-port=80/tcp --permanent
+  159  sudo firewall-cmd --zone=public --add-port=10050/tcp --permanent
+  160  curl localhost:10050/post_endpoint
+  161  curl -X POST -H "Content-Type: application/json" -d '{"key": "value"}' http://127.0.0.1:5000/post_endpoint
+  162  curl -X POST -H "Content-Type: application/json" -d '{"key": "value"}' http://127.0.0.1:10050/post_endpoint
+  163  ls
+  164  cat test.py 
+  165  \
+  166  vi gpt.py
+  167  python3 gpt.py 
+  168  vi post.py
+  169  python3 post.py 
+  170  pip3 install flask
+  171  python3 post.py 
+  172  vi post.py 
+  173  firewall-cmd --add-port=10050
+  174  sudo firewall-cmd --add-port=10050 --
+  175  python3 post.py 
+  176  vi post.py 
+  177  python3 post.py 
+  178  ls
+  179  vi sanket
+  180  vi cc
+  181  cat cc 
+  182  cat take
+  183  cat cc
+  184  cat test.py 
+  185  cat gpt.py 
+  186  python3 gpt.py 
+  187  ls
+  188  cat test.py 
+  189  ls
+  190  cat gpt.py 
+  191  yum install nodejs npm -y
+  192  sudo yum install nodejs npm -y
+  193  nodejs version
+  194  nodejs
+  195  node
+  196  node --version
+  197  vi prath.js
+  198  node prath.js 
+  199  less prath.js 
+  200  !
+  201  vi mau.js
+  202  node mau.js 
+  203  vi mau.js 
+  204  node version
+  205  node --version
+  206  n latest
+  207  npm install -g n   
+  208  sudo npm install -g n   
+  209   latest
+  210  sudo n latest
+  211  n latest
+  212  sudo n latest
+  213  sudo su
+  214  cat take 
+  215  ls
+  216  cat test.py 
+  217  #DEV server 
+  218  #all folder/files under the path /app/list/u5/bin/scripts/TALEND/TALEND_AUTO_01/TALEND_AUTO_01/TALEND_AUTO_01 has root ownership.
+  219  #This folder has been created by the requestor
+  220  x
+  221  vi new.py
+  222  python3 new.py 
+  223  vi new.py
+  224  python3 new.py 
+  225  less test.py 
+  226  vi test.py 
+  227  python3 test.py 
+  228  cat test.py 
+  229  cd vagrant_test/
+  230  cat Vagrantfile 
+  231  q!
+  232  vagrant up
+  233  VI vA
+  234  vi Vagrantfile 
+  235  VI vA
+  236  vagrant up
+  237  vagrant up --provider=vagrant
+  238  vagrant up --provider=virtualbox
+  239  VBoxManage --version
+  240  sudo /sbin/vboxconfig
+  241  cat /etc/re
+  242  cat /etc/redhat-release 
+  243  sudo dnf groupinstall "Development Tools" -y 
+  244  sudo dnf -y install rsync gcc zlib-devel libvirt-devel cmake
+  245  sudo yum install -y yum-utils
+  246  sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+  247  sudo yum install vagrant -y
+  248  vagrant box add centos/stream8 --provider=libvirt
+  249  vagrant box add centos/stream8 --provider=virtualbox
+  250  vagrant box list
+  251  vagrant init centos/7
+  252  vagrant up
+  253  vagrant up --provider=virtualbox
+  254  vagrant up --provider=libvirt
+  255  vagrant box add ubuntu/trusty64:
+  256  vagrant box add ubuntu/trusty64
+  257  df -h
+  258  fdisk -l
+  259  sudo su
+  260  ls
+  261  sudo su
+  262  history
+  263  sudo su
+  264  vagrant global status
+  265  sudo su
+  266  exit
+  267  cd vagrant_test/
+  268  vagrant up
+  269  vi Vagrantfile 
+  270  vagrant box list
+  271  sudo su
+  272  docker ps
+  273  sudo systemctl enable docker
+  274  sudo systemctl start docker
+  275  docker ps
+  276  sudo modprobe vboxdrv
+  277  for modfile in $(dirname $(modinfo -n vboxdrv))/*.ko; do   echo "Signing $modfile";   /usr/src/linux-headers-$(uname -r)/scripts/sign-file sha256                                 /root/module-signing/MOK.priv                                 /root/module-signing/MOK.der "$modfile"; done
+  278  vagrant up --provider=libvirt
+  279  sudo vagrant up --provider=libvirt
+  280  libvirt
+  281  for modfile in $(dirname $(modinfo -n vboxdrv))/*.ko; do   echo "Signing $modfile";   /usr/src/linux-headers-$(uname -r)/scripts/sign-file sha256                                 /root/module-signing/MOK.priv                                 /root/module-signing/MOK.der "$modfile"; done
+  282  sudo dnf remove Virtualbox
+  283  history | ggrep box
+  284  history | grep box
+  285  sudo su
+  286  sudo dnf remove virtualbox
+  287  for modfile in $(dirname $(modinfo -n vboxdrv))/*.ko; do   echo "Signing $modfile";   /usr/src/linux-headers-$(uname -r)/scripts/sign-file sha256                                 /root/module-signing/MOK.priv                                 /root/module-signing/MOK.der "$modfile"; done
+  288  yum module install virt
+  289  sudo yum module install virt
+  290  sudo su
+  291  ls
+  292  cd vagrant_test/
+  293  ls
+  294  vagrant up
+  295  vagrant up --provider=libvirt
+  296  sudo su
+  297  ansible -m ping 172.178.124.16
+  298  vi /etc/ansible/hosts
+  299  vi inventory
+  300  ansible -m ping -i inv
+  301  cd ..
+  302  ls -l
+  303  sudo chown ansible:ansible vagrant_test/
+  304  cd vagrant_test/
+  305  ls
+  306  ls -l
+  307  rm Insert 
+  308  rm *Processor*
+  309  ls
+  310  vi inventory
+  311  ansible -m ping -i inventory 
+  312  ansible -m ping -i inventory  all
+  313  ssh ansible@172.178.124.16
+  314  ssh-copy-id ansible@172.178.124.16
+  315  ssh-keygen
+  316  ssh-copy-id ansible@172.178.124.16
+  317  ssh ansible@172.178.124.16
+  318  ansible -m ping -i inventory  all
+  319  cd ..
+  320  mkdir createfs
+  321  cd createfs/
+  322  ls
+  323  top
+  324  free -m
+  325  free -h
+  326  la
+  327  ls
+  328  vi main.yml
+  329  ansible-playbook main.yml 
+  330  vi inventory
+  331  vi main.yml 
+  332  ansible-playbook main.yml -i inventory 
+  333  vi main.yml 
+  334  ansible-playbook main.yml -i inventory 
+  335  vi main.yml 
+  336  ansible-playbook main.yml -i inventory 
+  337  fdisk -l
+  338  cat main.yml 
+  339  ansible-playbook main.yml -i inventory 
+  340  cat main.yml 
+  341  fdisk /dev/sdc
+  342  sudo fdisk /dev/sdc
+  343  cat main.yml 
+  344  mkfs.ext4 /dev/sdc1
+  345  sudp mkfs.ext4 /dev/sdc1
+  346  sudo sudp mkfs.ext4 /dev/sdc1
+  347  sudo mkfs.ext4 /dev/sdc1
+  348  cat /etc/fstab
+  349  ls
+  350  sudo mkfs.ext4 /dev/sdc1
+  351  umount /dev/sdc1
+  352  sudo umount /dev/sdc1
+  353  fdisk -l
+  354  sudo fdisk -l
+  355  cat main.yml 
+  356  vi inventory 
+  357  vi main.yml 
+  358  ansible-playbook -i inventory main.yml 
+  359  vi main.yml 
+  360  rm main.yml 
+  361  vi main.yml
+  362  ansible-playbook -i inventory main.yml 
+  363  vi main.yml
+  364  rm main.yml 
+  365  vi main.yml
+  366  ansible-playbook -i inventory main.yml 
+  367  vi main.yml
+  368  fdisk -l
+  369  sudo fdisk -l
+  370  vi main.yml
+  371  ansible-playbook -i inventory main.yml 
+  372  vi main.yml
+  373  ansible-playbook -i inventory main.yml 
+  374  vi main.yml 
+  375  ansible-playbook -i inventory main.yml 
+  376  vi main.yml 
+  377  ansible-playbook -i inventory main.yml 
+  378  vi main.yml 
+  379  ansible-playbook -i inventory main.yml 
+  380  vi unmount.yml
+  381  ansible-playbook -i inventory unmount.yml 
+  382  ls
+  383  vi test.py 
+  384  python3 test.py 
+  385  vi test.yml
+  386  ansible-playbook  test.
+  387  ansible-playbook  test.yml 
+  388  rm test.yml
+  389  ls
+  390  cat test.py 
+  391  ls
+  392  free 0m
+  393  vi test.py 
+  394  python3 test.py 
+  395  less test.py 
+  396  vi test.py 
+  397  python3 test.py 
+  398  vi test.py 
+  399  python3 test.py 
+  400  vi test.py 
+  401  python3 test.py 
+  402  less test.py 
+  403  python3 test.py 
+  404  ls
+  405  cd createfs/
+  406  ls
+  407  vi main.yml 
+  408  cat inventory 
+  409  ansible-playbook -i inventory main.yml 
+  410  ls
+  411  ansible-playbook -i inventory unmount
+  412  ansible-playbook -i inventory unmount.yml 
+  413  cat main.yml 
+  414  ls /
+  415  sudo ls /opt
+  416  fdisk /dev/sc
+  417  fdisk /dev/sdc
+  418  p
+  419  sudofdisk /dev/sdc
+  420  sudo fdisk /dev/sdc
+  421  cat unmount.yml 
+  422  cp ../test.py .
+  423  vi test.py 
+  424  python3 test.py 
+  425  vi test.py 
+  426  python3 test.py 
+  427  az login
+  428  vi azure
+  429  exit
+  430  sudo yum install -y yum-utils
+  431  sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+  432  sudo yum -y install terraform
+  433  curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+  434  sudo apt-get update
+  435  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+  436  sudo dnf install -y https://packages.microsoft.com/config/rhel/8/packages-microsoft-prod.rpm
+  437  sudo dnf install azure-cli
+  438  docker ps -a
+  439  az login
+  440  ls
+  441  mkdir terraform
+  442  mv azure  terraform
+  443  cd terraform/
+  444  ls
+  445  cat azure 
+  446  az account show
+  447  az login
+  448  SUDO S
+  449  sudo su - ansible
+  450  ls
+  451  cd terraform/
+  452  az acccount show
+  453  az account show
+  454  cd terraform/
+  455  vi variables.tf
+  456  vi main.tf
+  457  terraform init
+  458  export AWS_ACCESS_KEY_ID="AKIAVVMAN4OJLTOQZNU2"
+  459  export AWS_SECRET_ACCESS_KEY="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"
+  460  rm main.tf 
+  461  vi main.tf
+  462  terraform init
+  463  vi main.tf
+  464  terraform init
+  465  terraform init -upgrade
+  466  terraform plan
+  467  ls
+  468  vi main.tf 
+  469  terraform plan
+  470  ls -a
+  471  terraform apply
+  472  vi main.tf 
+  473  time terraform apply --auto-approve
+  474  ls
+  475   cat terraform.tfstate  | less
+  476  echo 
+  477  echo "hello" >> aashish
+  478  cat aashish 
+  479  rm aashish 
+  480  terraform destroy 
+  481  terraform destroy  --auto-approve
+  482  vi ~/.bash_profile
+  483  ls -a
+  484  ls ~ -a
+  485  cat ../.bash_profile 
+  486  cat ../.bashrc
+  487  cd ..
+  488  ls
+  489  ls -a
+  490  vi ~/.bash_profile 
+  491  vi ~/.bashrc 
+  492  source ~/.bashrc
+  493  vi terra.yml
+  494  ansible-playbook  terra.yml 
+  495  vi terra.yml
+  496   ansible-galaxy collection install community.general
+  497  ansible-playbook  terra.yml 
+  498  >terra.yml 
+  499  vi terra.yml 
+  500  ansible-playbook  terra.yml 
+  501  vi terra.yml 
+  502  ansible-playbook  terra.yml --extra-vars action=destroy
+  503  vi terra.yml 
+  504  ansible-playbook  terra.yml --extra-vars action=destroy
+  505  vi terra.yml 
+  506  ansible-playbook  terra.yml --extra-vars action=destroy
+  507  vi terra.yml 
+  508  ansible-playbook  terra.yml --extra-vars action=destroy
+  509  cat terra.yml 
+  510  cd terraform/
+  511  ls
+  512  cat main.tf 
+  513  terraform destory --auto-approve
+  514  terraform destroy --auto-approve
+  515  az login
+  516  az account set --subscription="87dad3f1-5d65-4d5b-8bdd-84db5c2e056d"
+  517  az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/87dad3f1-5d65-4d5b-8bdd-84db5c2e056d"
+  518  vi sub.py
+  519  python3 sub.py 
+  520  vi sub.py
+  521  python3
+  522  vi sub.py
+  523  python3 sub.py 
+  524  vi sub.py
+  525  touch sample
+  526  vi sub.py
+  527  python3 sub.py 
+  528  vi sub.py
+  529  python3 sub.py 
+  530  docker ps
+  531  docker save
+  532  docker images
+  533  history | less
+  534  docker images
+  535  history
+  536  history | less
+  537  history > history2.txt
